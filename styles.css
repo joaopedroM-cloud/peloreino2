@@ -1,0 +1,152 @@
+header {
+    background: #0c0f99;
+    color: #f37704;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    background: #f37704;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #e66e00;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    pointer-events: auto;
+}   
+
+.dropdown-content  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.titulo {
+    font-size: 20px;             /* Tamanho da fonte do título */
+    color: #dd5a0f;             /* Cor do texto do título */
+    margin: 0;
+                      /* Remove margens padrão do h1 */
+}
+img {
+    width: 50px;                /* Ajuste o tamanho da imagem */
+    height: auto;               /* Mantém a proporção da imagem */
+    margin-right: 15px;         /* Espaçamento à direita da imagem */
+}
+.logo{
+    display: flex;               /* Usando flexbox para o cabeçalho */
+    align-items: center;        /* Alinha a imagem e o texto verticalmente no centro */
+    margin: 0%;
+    border: #0c0f99;
+    
+}
+body {
+    background-color: #ffffff;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 300px;
+    height: 400px;
+    
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 150px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+

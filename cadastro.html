@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="./imagens/pelorein.png" alt="Reino Pelo" class="Pelo Reino">
+    
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>Pelo Reino</h2>
+            <form id="registerForm">
+                <label for="newUsername">Usuário:</label>
+                <input type="text" id="newUsername" required>
+                <label for="newPassword">Senha:</label>
+                <input type="password" id="newPassword" required>
+                <label for="newConfirmPassword">Confirmar Senha:</label>
+                <input type="password" id="newConfirmPassword" required>
+                <label for="newEmail">Email:</label>
+                <input type="email" id="newEmail" required>
+                <div id="rememberMe">
+                    <input type="checkbox" id="rememberMeCheckbox">
+                    <label for="rememberMeCheckbox">Lembrar</label>
+                </div>
+                <button type="submit">Cadastrar</button>
+                <p id="errorMessage"></p>
+            </form>
+            <p id="registerMessage"></p>
+        </div>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

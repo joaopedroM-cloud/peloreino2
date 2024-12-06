@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição - Pelo Reino</title>
+    <link rel="stylesheet" href="inscrição.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Faça parte do Pelo Reino</h1>
+        <img src="./imagens/pelorein.png">
+        <form action="#" method="POST">
+            <!-- Dados Pessoais -->
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="genero">Gênero:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required> Masculino
+                <input type="radio" id="feminino" name="genero" value="feminino" required> Feminino
+                <input type="radio" id="outro" name="genero" value="outro" required> Outro
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone de Contato:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Informações sobre o Esporte -->
+            <div class="form-group">
+                <label for="modalidade">Modalidade de Interesse:</label>
+                <select id="modalidade" name="modalidade" required>
+                    <option value="volei">Vôlei</option>
+                    <option value="peteca">Peteca</option>
+                    <option value="futsal">Futsal</option>
+
+        
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="posicao">Posição/Especialidade (se aplicável):</label>
+                <input type="text" id="posicao" name="posicao">
+            </div>
+
+            <div class="form-group">
+                <label for="experiencia">Experiência Esportiva:</label>
+                <select id="experiencia" name="experiencia" required>
+                    <option value="nenhuma">Nenhuma experiência</option>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                </select>
+            </div>
+
+            <!-- Saúde e Condições Físicas -->
+            <div class="form-group">
+                <label for="condicaoSaude">Você possui alguma condição de saúde ou restrição física?</label>
+                <input type="radio" id="saude_sim" name="condicaoSaude" value="sim"> Sim
+                <input type="radio" id="saude_nao" name="condicaoSaude" value="nao" checked> Não
+            </div>
+
+            <div class="form-group">
+                <label for="aptidao">Está apto a praticar atividades físicas de alta intensidade?</label>
+                <input type="radio" id="aptidao_sim" name="aptidao" value="sim"> Sim
+                <input type="radio" id="aptidao_nao" name="aptidao" value="nao" checked> Não
+            </div>
+
+            <!-- Termos de Autorização -->
+            <div class="form-group">
+                <label for="autorizacao">Autorização dos Pais/Responsáveis (para menores de 18 anos):</label>
+                <textarea id="autorizacao" name="autorizacao"></textarea>
+            </div>
+
+
+
+            <div class="form-group">
+                <button type="submit">Enviar Inscrição</button>
+                <script src="inscrição.js"></script>
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+</html>
